@@ -1,0 +1,125 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Duerme ya!
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="container" id="content">
+    <div class="row">
+      <div class="twelve columns">
+        <div id="start">
+          <p>
+            <span style="font-size: 125%;">I have to wake up at...</span>
+            <br>
+          </p>
+          <div>
+              <ion-item>
+            <ion-select id="hour" >
+              <ion-option>(hour)</ion-option>
+              <ion-option>1</ion-option>
+              <ion-option>2</ion-option>
+              <ion-option>3</ion-option>
+              <ion-option>4</ion-option>
+              <ion-option>5</ion-option>
+              <ion-option>6</ion-option>
+              <ion-option>7</ion-option>
+              <ion-option>8</ion-option>
+              <ion-option>9</ion-option>
+              <ion-option>10</ion-option>
+              <ion-option>11</ion-option>
+              <ion-option>12</ion-option>
+            </ion-select>
+           </ion-item>
+           <ion-item>
+            <ion-select id="minute" >
+              <ion-option>(minute)</ion-option>
+              <ion-option>00</ion-option>
+              <ion-option>05</ion-option>
+              <ion-option>10</ion-option>
+              <ion-option>15</ion-option>
+              <ion-option>20</ion-option>
+              <ion-option>25</ion-option>
+              <ion-option>30</ion-option>
+              <ion-option>35</ion-option>
+              <ion-option>40</ion-option>
+              <ion-option>45</ion-option>
+              <ion-option>50</ion-option>
+              <ion-option>55</ion-option>
+            </ion-select>
+          </ion-item>
+        <ion-item>
+            <ion-select id="ampm" >
+              <ion-option>AM</ion-option>
+              <ion-option>PM</ion-option>
+            </ion-select>
+          </ion-item>
+            <br>
+            <button id="calculate" ion-button >calculate</button>
+            <p></p>
+          </div>
+          <p style="text-align: center; font-size: 125%;">
+            <i>or</i>
+          </p>
+          <p>
+            <span style="font-size: 125%;">Find out when to get up if you go to bed now</span>
+          </p>
+          <div >
+            <button ion-button id="zzz">zzz</button>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+          </div>
+        </div>
+        <!-- end #start -->
+        <div id="results" style="display:none;">
+          <p style="font-size: 150%">You should try to
+            <b>fall asleep</b> at one of the following times:</p>
+          <span id="result1" style="font-size: 300%;" title="Six Cycles: Nine Hours of Sleep"></span>
+          <i style="font-size: 200%;">or </i>
+          <span id="result2" style="font-size: 300%;" title="Five Cycles: Seven and a half Hours of Sleep"></span>
+          <i style="font-size: 200%;">or </i>
+          <span id="result3" style="font-size: 300%;" title="Four Cycles: Six Hours of Sleep"></span>
+          <i style="font-size: 200%;">or </i>
+          <span id="result4" style="font-size: 300%;" title="Three Cycles: Four and a half Hours of Sleep"></span>
+          <p style="margin-top: 1em; font-size: 150%;">Please keep in mind that you should be
+            <b>falling asleep</b> at these times.</p>
+          <p style="font-size: 150%;">The average human takes
+            <b>fourteen minutes</b> to fall asleep, so plan accordingly!</p>
+          <p style="font-size: 150%;">sleepyti.me works by counting backwards in
+            <b>sleep cycles</b>. Waking up in the middle of a sleep cycle leaves you feeling tired and groggy, but waking up
+            <i>in between</i> cycles wakes you up feeling refreshed and alert!</p>
+          <a class="back"  style="font-size: 200%;">back</a>
+          <br>
+        </div>
+        <!-- end results -->
+        <div id="resultsNow" style="display:none;">
+          <p style="font-size: 150%">It takes the average human
+            <b>fourteen minutes</b> to fall asleep.</p>
+          <p style="font-size: 150%">If you head to bed right now, you should try to wake up at one of the following times:</p>
+          <span id="resultNow1" style="font-size: 300%;" title="One Cycle: One and a half Hours of Sleep"></span>
+          <i style="font-size: 150%;">&nbsp;or </i>
+          <span id="resultNow2" style="font-size: 300%;" title="Two Cycles: Three Hours of Sleep"></span>
+          <i style="font-size: 150%;">&nbsp;or </i>
+          <span id="resultNow3" style="font-size: 300%;" title="Three Cycles: Four and a half Hours of Sleep"></span>
+          <i style="font-size: 150%;">&nbsp;or </i>
+          <span id="resultNow4" style="font-size: 300%;" title="Four Cycles: Six Hours of Sleep"></span>
+          <i style="font-size: 150%;">&nbsp;or </i>
+          <span id="resultNow5" style="font-size: 300%;" title="Five Cycles: Seven and a half Hours of Sleep"></span>
+          <i style="font-size: 150%;">&nbsp;or </i>
+          <span id="resultNow6" style="font-size: 300%;" title="Six Cycles: Nine Hours of Sleep"></span>
+          <p style="margin-top: 1em; font-size: 150%;">A good night's sleep consists of 5-6 complete sleep cycles.</p>
+          <a class="back"  style="font-size: 200%;">back</a>
+          <br>
+        </div>
+        <!-- end resultsNow -->
+      </div>
+    </div>
+
+    
+  </div>
+</ion-content>
